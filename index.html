@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meeting Minutes</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <h1>Meeting Notes</h1>
+                <p>As you explore the site, feel free to enjoy this music</p>
+                <audio
+                    controls
+                    src="media/chilling-time-200497.mp3">
+                    <a href="media/chilling-time-200497.mp3"></a>
+                </audio>
+
+                <p>As a reminder, this site will <span>record</span> today's meeting</p>
+                <button>
+                    Check In
+                </button>
+                <hr>
+            </section>
+
+            <section>
+                <h2>Meeting Topic: How to Balance Life in College</h2>
+                <h3>Navigate</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#Members_Present">Members Present</a></li>
+                        <li><a href="#Materials_Covered">Materials Covered</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h3>Members Present</h3>
+                    <details>
+                        <summary>Disclaimer</summary>
+                        Nobody actually came though since this is a fake meeting
+                    </details>
+                    <ul>
+                        <li>Clarissa Cheng</li>
+                        <li>Bob Ross</li>
+                        <li>Neil Armstrong</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Content Covered</h3>
+                    <p>Basic summary of what life in college is typically like</p>
+                    <p><strong>Must watch video on life in college</strong></p>
+                    <video controls width="250">
+                        <source src="media/college.mp4" type="video/mp4">
+                    </video>
+                    <p>How to balance life in college</p>
+                    <ol>
+                        <li>Get <b>plenty</b> of sleep so you aren't tired throughout the day</li>
+                        <li>Use a planner and <i>schedule</i> how you want each day to go</li>
+                        <li>Try to <em>balance</em> out family, friends, academics, and health</li>
+                        <li>Find more information <a href="https://www.collegeraptor.com/find-colleges/articles/tips-tools-advice/dos-donts-balancing-college-life/">here</a></li>
+                    </ol>
+                    <p>Here is a haikyu about balancing life in college:<br>
+                        Juggling books high,<br>
+                        Life's serves and spikes, in motion,<br>
+                        Balance found, we fly.<br>
+                    </p>
+                    <p>Image to be sent out after meeting</p>
+                    <img src="https://prepexpert.com/wp-content/uploads/2019/09/518266_BalanceCollegeWork_1_082719.jpg" width="250" alt="Image not available">
+                    <p>
+                        <select>
+                            <option value="Choose a topic for next meeting">Choose a topic for next meeting</option>
+                            <option value="How to make more friends in college">How to make more friends in college</option>
+                            <option value="How to make the best of college">How to make the best of college</option>
+                        </select>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <hr>
+        <footer>
+            <h3>Your Feedback</h3>
+            <form>
+                <fieldset>
+                    Name: <input type="text" name="name"/>
+                </fieldset>
+            </form>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" rows="3" cols="40">I recommend... blah blah blah</textarea>
+            <p>
+                <label for="visitor_type">Who is visiting this site:</label>
+                <input list="types" id="visitor_type" name="visitor type">
+                <datalist id="types">
+                    <option value="Student"></option>
+                    <option value="Instructor"></option>
+                    <option value="Alien"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </p>
+        </footer>
+    </body>
+</html>
