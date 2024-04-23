@@ -2,14 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes</title>
         <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="stylesheet.css">       <!-- External CSS styling -->
+        <style>     /* Internal CSS styling */
+            h1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        </style>
     </head>
 
     <body>
         <main>
             <section>
-                <h1>Meeting Notes</h1>
+                <h1 style="font-size: 4vh">Meeting Notes</h1>       <!-- Inline CSS styling -->
                 <p>As you explore the site, feel free to enjoy this music</p>
                 <audio
                     controls
@@ -18,7 +33,7 @@
                 </audio>
 
                 <p>As a reminder, this site will <span>record</span> today's meeting</p>
-                <button>
+                <button type="button">
                     Check In
                 </button>
                 <hr>
@@ -33,7 +48,7 @@
                         <li><a href="#Materials_Covered">Materials Covered</a></li>
                     </ul>
                 </nav>
-                <div>
+                <div class="members_present">
                     <h3>Members Present</h3>
                     <details>
                         <summary>Disclaimer</summary>
@@ -45,7 +60,7 @@
                         <li>Neil Armstrong</li>
                     </ul>
                 </div>
-                <div>
+                <div class="content_covered">
                     <h3>Content Covered</h3>
                     <p>Basic summary of what life in college is typically like</p>
                     <p><strong>Must watch video on life in college</strong></p>
@@ -67,7 +82,7 @@
                     <p>Image to be sent out after meeting</p>
                     <img src="https://prepexpert.com/wp-content/uploads/2019/09/518266_BalanceCollegeWork_1_082719.jpg" width="250" alt="Image not available">
                     <p>
-                        <select>
+                        <select name="content selector" id="content_selector">
                             <option value="Choose a topic for next meeting">Choose a topic for next meeting</option>
                             <option value="How to make more friends in college">How to make more friends in college</option>
                             <option value="How to make the best of college">How to make the best of college</option>
