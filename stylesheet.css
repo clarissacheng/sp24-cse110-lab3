@@ -1,0 +1,156 @@
+/* Code to style the Meeting Minutes webpage */
+
+/* CSS Variables & Fallbacks */
+:root {
+    --main-bg-color: #f0f0f0;
+    --fallback-color: #000;
+}
+
+/* Universal Selector */
+* { 
+    margin: 0.6rem;
+    font-family: "Roboto", sans-serif; /* Fonts */
+}
+
+/* Element Selector */
+main { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: hsl(199, 49%, 37%);
+}
+
+body {
+    color: #122121;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    line-height: 0.20in;
+    padding: 2rem;
+}
+
+select {
+    margin: 35px 20px 5px;
+    padding: 10px 10px;
+    border: 3px dashed gray;
+
+    font-size: 80%;
+    line-height: 1000cm;
+    padding: 0.4em;
+}
+
+/* Class Selector */
+.members_present { 
+    color: blue;
+    text-decoration: underline;
+    text-align: left;
+
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 1px;
+}
+
+/* Selector List */
+h1, h2, h3 { 
+    color: green;
+}
+
+/* Attribute selector */
+a[href="media/chilling-time-200497.mp3"] { 
+    background-color: purple;
+}
+
+/* Descendant Combinator */
+.members_present li { 
+    font-size: 18px;
+}
+
+/* Child Combinator */
+nav > ul { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+}
+
+/* General Sibling Combinator */
+.content p ~ p { 
+    margin-top: 15px;
+}
+
+/* Adjacent Sibling Combinator */
+h2 + button { 
+    margin-top: 5px;
+}
+
+select#content_selector {
+    min-width: 800px;
+}
+
+/* ID Selector */
+#visitor_type { 
+    display: inline;
+    max-width: 500px;
+    position: absolute;
+}
+
+#comments {
+    height: 50px;
+    width: 300px;
+    position: relative;
+}
+
+footer {
+    color: palevioletred
+}
+
+section {
+    flex-wrap: nowrap;
+}
+
+select[name="content selector"] {
+    font-size: 15px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7f1717;
+}
+
+/* Pseudo-class Selector */
+button:hover {
+    color: rgb(36, 196, 46);
+    display: block;
+}
+
+button:active {
+    background-color: #bbb;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* New Selectors */
+p:has(+ ol), p:has(+ ul) {
+    margin-bottom: 30px;
+}
+
+/* Nested Selectors */
+body div {
+    color: navy;
+}
